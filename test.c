@@ -57,11 +57,11 @@ void recuperer_chemin(GtkWidget *bouton, GtkWidget *file_selection)
     GtkWidget *dialog;
     chemin = gtk_file_selection_get_filename(GTK_FILE_SELECTION (file_selection) );
      
-    dialog = gtk_message_dialog_new(GTK_WINDOW(file_selection),
+    /*dialog = gtk_message_dialog_new(GTK_WINDOW(file_selection),
     GTK_DIALOG_MODAL,
     GTK_MESSAGE_INFO,
     GTK_BUTTONS_OK,
-    "Vous avez choisi :\n%s", chemin);
+    "Vous avez choisi :\n%s", chemin);*/
     GtkWidget *pWindow;
     GtkWidget *pVBox;
     GtkWidget *pImage;
