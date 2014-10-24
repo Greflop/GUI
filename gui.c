@@ -107,7 +107,7 @@ void creer_file_selection()
 void recuperer_chemin(GtkWidget *bouton, GtkWidget *file_selection)
 {
     const gchar* chemin;
-    GtkWidget *dialog;
+    //GtkWidget *dialog;
     chemin = gtk_file_selection_get_filename(GTK_FILE_SELECTION (file_selection) );
 
     /*dialog = gtk_message_dialog_new(GTK_WINDOW(file_selection),
@@ -143,8 +143,8 @@ void recuperer_chemin(GtkWidget *bouton, GtkWidget *file_selection)
 
     gtk_widget_show_all(pWindow);
 
-    gtk_dialog_run(GTK_DIALOG(dialog));
-    gtk_widget_destroy(dialog);
+    //gtk_dialog_run(GTK_DIALOG(dialog));
+    //gtk_widget_destroy(dialog);
     gtk_widget_destroy(file_selection);
 }
  
